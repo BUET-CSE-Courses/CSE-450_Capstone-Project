@@ -1,0 +1,5 @@
+a) The student wrote: "a = <A1>ms^-2" in the first image. This is correct, and the student has correctly applied the formula for acceleration: $a = \frac{F}{m}$, where $F$ is the force and $m$ is the mass of the cart. The student correctly calculated the force to be $<F1>N$ and the mass to be $<M1>kg$, giving an acceleration of $<A1>ms^-2$. Therefore, the student has correctly calculated the acceleration of the cart.
+
+b) The student wrote: "v = <B1>ms^-1" in the second image. This is correct, and the student correctly applied the formula for speed: $v = \frac{F}{m}$, where $F$ is the force and $m$ is the mass of the cart. The student correctly calculated the force to be $<F1>N$ and the mass to be $<M1>kg$, giving a speed of $<B1>ms^-1$. Therefore, the student has correctly calculated the speed of the cart.
+
+c) The student wrote: "a_n = <C1>ms^-2" in the third image. This is correct, and the student correctly applied the formula for acceleration: $a_n = \frac{F}{m}$, where $F$ is the force and $m$ is the mass of the cart. The student correctly calculated the force to be $<F2>N$ and the mass

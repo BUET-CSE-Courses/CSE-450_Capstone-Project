@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The only folder the FileProvider shares: where the system camera writes a
+  page photo (ScanViewModel.prepareCapture). The file is deleted once read.
+-->
+<paths>
+    <cache-path name="captures" path="captures/" />
+</paths>

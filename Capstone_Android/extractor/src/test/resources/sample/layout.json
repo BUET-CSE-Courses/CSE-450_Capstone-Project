@@ -1,0 +1,54 @@
+{
+  "layout_id": "32824d98-aa41-43f9-8eef-4f4c2fb3b956",
+  "page_w_px": 1240,
+  "page_h_px": 1754,
+  "page_count": 1,
+  "answer_boxes": [
+    {
+      "id": "ab_syzn1vsmmsrm6jat",
+      "label": "",
+      "points": 1,
+      "order_index": 0,
+      "page_index": 0,
+      "bbox": [
+        168,
+        600,
+        960,
+        250
+      ],
+      "segments": [
+        [
+          0,
+          168,
+          600,
+          960,
+          250
+        ]
+      ],
+      "qr_segments": null
+    },
+    {
+      "id": "ab_uub03qhomsrm71en",
+      "label": "",
+      "points": 1,
+      "order_index": 1,
+      "page_index": 0,
+      "bbox": [
+        168,
+        1282,
+        960,
+        290
+      ],
+      "segments": [
+        [
+          0,
+          168,
+          1282,
+          960,
+          290
+        ]
+      ],
+      "qr_segments": null
+    }
+  ]
+}

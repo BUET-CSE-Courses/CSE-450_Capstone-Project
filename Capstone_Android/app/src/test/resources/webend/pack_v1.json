@@ -1,0 +1,65 @@
+{
+  "pack_version": 1,
+  "question_id": "5b0f6c1e-2d7a-4a3e-9c51-0f3a2b7d9e10",
+  "course_id": "c7d1a9e4-8b2f-4f60-a1d3-6e5b4c3a2f19",
+  "title": "Kinematics quiz (synthetic fixture)",
+  "page_w_px": 1240,
+  "page_h_px": 1754,
+  "page_count": 2,
+  "dpi": 150,
+  "markers": {
+    "aruco_dict": "DICT_4X4_50",
+    "marker_size_px": 60,
+    "marker_margin_px": 40,
+    "centres": {
+      "0": [70, 70],
+      "1": [1170, 70],
+      "2": [70, 1684],
+      "3": [1170, 1684]
+    }
+  },
+  "boxes": [
+    {
+      "id": "ab_fixture_one",
+      "label": "Q1(a)",
+      "points": 2,
+      "order_index": 0,
+      "page_index": 0,
+      "bbox": [186, 334, 930, 90],
+      "segments": [[0, 186, 334, 930, 90]],
+      "question_text": "State Newton's second law.",
+      "model_answer_text": "FIXTURE PLACEHOLDER, not a real answer key",
+      "model_answer_images": ["pack/images/model-answer/9a1f0c2e-7b3d-4e5f-8a6b-1c2d3e4f5a6b"],
+      "question_images": ["pack/images/question/3e4f5a6b-1c2d-4e5f-8a6b-9a1f0c2e7b3d"],
+      "blocked_reason": null
+    },
+    {
+      "id": "ab_fixture_two",
+      "label": "Q1(b)",
+      "points": 3,
+      "order_index": 1,
+      "page_index": 0,
+      "bbox": [186, 1500, 930, 150],
+      "segments": [[0, 186, 1500, 930, 150], [1, 186, 124, 930, 250]],
+      "question_text": "Derive v = u + at.",
+      "model_answer_text": "FIXTURE PLACEHOLDER, not a real answer key",
+      "model_answer_images": [],
+      "question_images": [],
+      "blocked_reason": null
+    },
+    {
+      "id": "ab_fixture_three",
+      "label": "Q2",
+      "points": null,
+      "order_index": 2,
+      "page_index": 1,
+      "bbox": [186, 500, 930, 200],
+      "segments": [[1, 186, 500, 930, 200]],
+      "question_text": "",
+      "model_answer_text": "",
+      "model_answer_images": [],
+      "question_images": [],
+      "blocked_reason": "No marks set for this part — give it a marking scheme, or set them by hand"
+    }
+  ]
+}

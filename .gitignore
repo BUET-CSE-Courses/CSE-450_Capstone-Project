@@ -1,0 +1,91 @@
+# Root of the phone-app repo (project folder "capstone app/").
+# Capstone_Android/.gitignore (and app/.gitignore) still apply inside that
+# folder; this file adds the rules for everything around it.
+
+# ---- Someone else's repo ---------------------------------------------------
+# Script-Checker-Web-End is the teammate's repo
+# (github.com/Undying2021Dreams/Script-Checker-Web-End), with its own .git.
+# Nothing from it is ever committed here; the README links to it instead.
+/Script-Checker-Web-End/
+
+# ---- Legacy code (history only, never part of this repo) --------------------
+# ASC_Capstone is its own git root (old Node server); v-2.1.1 is the old
+# teacher worksheet system.
+/ASC_Capstone/
+/v-2.1.1/
+
+# ---- Machine config and secrets --------------------------------------------
+# Unanchored on purpose: covers Capstone_Android/local.properties (sdk.dir,
+# Entra client ids, signature hash) and any .env at any depth. Templates stay.
+local.properties
+.env
+.env.*
+!.env.example
+# Signing keys and anything that looks like one.
+*.jks
+*.keystore
+*.p12
+*.pem
+# Claude Code's per-user settings (CLAUDE.md itself IS committed).
+.claude/settings.local.json
+
+# ---- Model weights ---------------------------------------------------------
+# gemma-4-E2B-it (2.6 GB), Qwen2-VL-2B (1.7 GB), LLaVA-OneVision-0.5B
+# (810 MB), gemma3-1b-it-int4 (570 MB). Downloaded separately and pushed to
+# the phone with adb; see README.md.
+*.litertlm
+*.task
+*.tflite
+
+# ---- Gradle / Kotlin / Android build output --------------------------------
+build/
+.gradle/
+.kotlin/
+.cxx/
+.externalNativeBuild/
+captures/
+*.apk
+*.aab
+*.apks
+*.ap_
+*.dex
+*.hprof
+*.log
+# Machine-specific daemon JDK pin (also ignored by Capstone_Android/.gitignore).
+gradle/gradle-daemon-jvm.properties
+
+# ---- Gradle wrapper: MUST stay tracked --------------------------------------
+# gradlew / gradlew.bat need it to build on a fresh clone. Nothing above
+# matches it; this line guards against a future *.jar rule.
+!Capstone_Android/gradle/wrapper/gradle-wrapper.jar
+
+# ---- Stray screenshots, photos and printouts in the root -------------------
+# adb screenshots (marks.png, upload.png, shot.png ...), phone photos and
+# printed worksheets pile up here during testing. Anchored to the top level on
+# purpose: an unanchored *.png would also drop the test fixtures under
+# Capstone_Android/**/src/test/resources and the launcher icons.
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.heic
+/*.gif
+/*.bmp
+/*.mp4
+/*.pdf
+/*.zip
+
+# ---- Local caches / IDE ----------------------------------------------------
+.cache/
+.idea/
+*.iml
+.vscode/
+.fleet/
+*.swp
+*~
+
+# ---- OS cruft --------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store

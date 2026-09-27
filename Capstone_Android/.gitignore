@@ -1,0 +1,47 @@
+# Capstone_Android — Kotlin + Jetpack Compose, two Gradle modules (:app, :extractor).
+# Capstone_Android is a subfolder of the repo rooted at the project folder, so the
+# root .gitignore applies here too. This file keeps the rules that are specific
+# to the Android project.
+
+# ---- Gradle / build output -------------------------------------------------
+.gradle/
+/build
+app/build/
+extractor/build/
+.kotlin/
+.cxx
+.externalNativeBuild
+captures/
+
+# ---- Machine-specific: SDK path, toolchain pin -----------------------------
+# local.properties holds this machine's sdk.dir.
+local.properties
+# gradle-daemon-jvm.properties pins the daemon to whatever JDK this machine
+# happens to have (here, the JetBrains runtime). Committing it makes the build
+# fail on any machine without that exact JDK.
+gradle/gradle-daemon-jvm.properties
+
+# ---- IDE churn -------------------------------------------------------------
+.idea/
+*.iml
+
+# ---- Build artifacts -------------------------------------------------------
+*.apk
+*.aab
+
+# ---- Model weights ---------------------------------------------------------
+# 570 MB / 810 MB / 1.7 GB. These live outside the repo and are pushed to the
+# device with `adb push` into /data/local/tmp/llm (see RUNBOOK.md).
+*.litertlm
+
+# ---- OS cruft --------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ---- Deliberately TRACKED --------------------------------------------------
+# The ArUco fixture page and its layout are the only real test worksheet in the
+# project; GoldenSampleTest, MarkerContractTest and PageExtractorTest all read
+# them. Nothing above matches this path — these lines exist so that a future
+# `*.png` or `*.json` rule cannot silently drop it.
+!extractor/src/test/resources/sample/
+!extractor/src/test/resources/sample/**

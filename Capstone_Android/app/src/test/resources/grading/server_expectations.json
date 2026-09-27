@@ -1,0 +1,316 @@
+{
+  "looks_blank": {
+    "pure_white": true,
+    "photographed_grey": true,
+    "faint_short_answer": false,
+    "full_working": false
+  },
+  "user_messages": {
+    "crop_only": {
+      "in": {
+        "label": "",
+        "max_score": 5,
+        "question_text": "Solve 2x+4=10",
+        "ground_truth_text": "x = 3",
+        "crops": 1
+      },
+      "out": "QUESTION:\nSolve 2x+4=10\n\nMODEL ANSWER:\nx = 3\n\nMAXIMUM MARK: 5\n\nIMAGES: 1 image(s) of the STUDENT'S handwritten answer, in order."
+    },
+    "labelled": {
+      "in": {
+        "label": "Q1(a)",
+        "max_score": 3,
+        "question_text": "  Differentiate x^2 ",
+        "ground_truth_text": "2x",
+        "crops": 2
+      },
+      "out": "Part: Q1(a)\nQUESTION:\nDifferentiate x^2\n\nMODEL ANSWER:\n2x\n\nMAXIMUM MARK: 3\n\nIMAGES: 2 image(s) of the STUDENT'S handwritten answer, in order."
+    },
+    "gt_images": {
+      "in": {
+        "label": "",
+        "max_score": 5,
+        "question_text": "Q",
+        "ground_truth_text": "",
+        "ground_truth_images": 1,
+        "crops": 2
+      },
+      "out": "QUESTION:\nQ\n\nMODEL ANSWER:\n(provided as an image below)\n\nMAXIMUM MARK: 5\n\nIMAGES: the first 1 image(s) are the official MODEL ANSWER; the remaining 2 image(s) are the STUDENT'S handwritten answer, in order."
+    },
+    "all_three": {
+      "in": {
+        "label": "",
+        "max_score": 5,
+        "question_text": "Find angle x in the figure",
+        "ground_truth_text": "40",
+        "question_images": 1,
+        "ground_truth_images": 1,
+        "crops": 1
+      },
+      "out": "QUESTION:\nFind angle x in the figure\n\nMODEL ANSWER:\n40\n\nMAXIMUM MARK: 5\n\nIMAGES: the first 1 image(s) are figures belonging to the QUESTION; the next 1 image(s) are the official MODEL ANSWER; the remaining 1 image(s) are the STUDENT'S handwritten answer, in order."
+    },
+    "question_only_images": {
+      "in": {
+        "label": "b",
+        "max_score": 10,
+        "question_text": "",
+        "ground_truth_text": "x",
+        "question_images": 2,
+        "crops": 1
+      },
+      "out": "Part: b\nQUESTION:\n(not provided)\n\nMODEL ANSWER:\nx\n\nMAXIMUM MARK: 10\n\nIMAGES: the first 2 image(s) are figures belonging to the QUESTION; the remaining 1 image(s) are the STUDENT'S handwritten answer, in order."
+    }
+  },
+  "replies": {
+    "normal": {
+      "text": "SCORE: 3\nFEEDBACK: Good method, arithmetic slip.",
+      "max": 5,
+      "parsed": {
+        "score": 3.0,
+        "feedback": "Good method, arithmetic slip.",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "decimal": {
+      "text": "SCORE: 2.5\nFEEDBACK: Half credit.",
+      "max": 5,
+      "parsed": {
+        "score": 2.5,
+        "feedback": "Half credit.",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "unreadable": {
+      "text": "SCORE: UNREADABLE\nFEEDBACK: Photo is blurred.",
+      "max": 5,
+      "parsed": {
+        "score": null,
+        "feedback": "Photo is blurred.",
+        "unreadable": true,
+        "parse_error": false
+      }
+    },
+    "ignored_format": {
+      "text": "I think this deserves about 4 marks",
+      "max": 5,
+      "parsed": {
+        "score": null,
+        "feedback": "",
+        "unreadable": false,
+        "parse_error": true
+      }
+    },
+    "banana": {
+      "text": "SCORE: banana\nFEEDBACK: hmm",
+      "max": 5,
+      "parsed": {
+        "score": null,
+        "feedback": "hmm",
+        "unreadable": false,
+        "parse_error": true
+      }
+    },
+    "empty": {
+      "text": "",
+      "max": 5,
+      "parsed": {
+        "score": null,
+        "feedback": "",
+        "unreadable": false,
+        "parse_error": true
+      }
+    },
+    "above_max": {
+      "text": "SCORE: 9\nFEEDBACK: x",
+      "max": 5,
+      "parsed": {
+        "score": null,
+        "feedback": "x",
+        "unreadable": false,
+        "parse_error": true
+      }
+    },
+    "negative": {
+      "text": "SCORE: -2\nFEEDBACK: x",
+      "max": 5,
+      "parsed": {
+        "score": null,
+        "feedback": "x",
+        "unreadable": false,
+        "parse_error": true
+      }
+    },
+    "full": {
+      "text": "TRANSCRIPT: 2x = 6\nx = 3\nSCORE: 4\nFEEDBACK: Correct method.",
+      "max": 5,
+      "parsed": {
+        "score": 4.0,
+        "feedback": "Correct method.",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "nothing_written": {
+      "text": "TRANSCRIPT: NOTHING WRITTEN\nSCORE: 3\nFEEDBACK: Nice.",
+      "max": 5,
+      "parsed": {
+        "score": 0.0,
+        "feedback": "Nothing was written in this answer box.",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "nothing_variant": {
+      "text": "TRANSCRIPT: (blank)\nSCORE: 2\nFEEDBACK: ok",
+      "max": 5,
+      "parsed": {
+        "score": 0.0,
+        "feedback": "Nothing was written in this answer box.",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "empty_transcript": {
+      "text": "TRANSCRIPT:\nSCORE: 2\nFEEDBACK: ok",
+      "max": 5,
+      "parsed": {
+        "score": 2.0,
+        "feedback": "ok",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "na": {
+      "text": "TRANSCRIPT: n/a\nSCORE: 1\nFEEDBACK: ok",
+      "max": 5,
+      "parsed": {
+        "score": 0.0,
+        "feedback": "Nothing was written in this answer box.",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "dashes": {
+      "text": "TRANSCRIPT: ---\nSCORE: 1\nFEEDBACK: ok",
+      "max": 5,
+      "parsed": {
+        "score": 0.0,
+        "feedback": "Nothing was written in this answer box.",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "nothing_in_sentence": {
+      "text": "TRANSCRIPT: nothing to add, x = 3\nSCORE: 1\nFEEDBACK: ok",
+      "max": 5,
+      "parsed": {
+        "score": 1.0,
+        "feedback": "ok",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "feedback_then_score": {
+      "text": "FEEDBACK: fine SCORE: 2\nSCORE: 2",
+      "max": 5,
+      "parsed": {
+        "score": 2.0,
+        "feedback": "fine",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "score_with_suffix": {
+      "text": "SCORE: 4/5 marks\nFEEDBACK: ok",
+      "max": 5,
+      "parsed": {
+        "score": 4.0,
+        "feedback": "ok",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "lowercase": {
+      "text": "transcript: x=3\nscore: 5\nfeedback: ok",
+      "max": 5,
+      "parsed": {
+        "score": 5.0,
+        "feedback": "ok",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "crlf": {
+      "text": "TRANSCRIPT: x = 3\r\nSCORE: 3\r\nFEEDBACK: Good.\r\n",
+      "max": 5,
+      "parsed": {
+        "score": 3.0,
+        "feedback": "Good.",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "missing_score": {
+      "text": "TRANSCRIPT: x = 3\nFEEDBACK: ok",
+      "max": 5,
+      "parsed": {
+        "score": null,
+        "feedback": "ok",
+        "unreadable": false,
+        "parse_error": true
+      }
+    },
+    "missing_feedback": {
+      "text": "TRANSCRIPT: x = 3\nSCORE: 3",
+      "max": 5,
+      "parsed": {
+        "score": 3.0,
+        "feedback": "",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "unreadable_lower": {
+      "text": "TRANSCRIPT: scribbles\nSCORE: unreadable, too faint\nFEEDBACK: retake",
+      "max": 5,
+      "parsed": {
+        "score": null,
+        "feedback": "retake",
+        "unreadable": true,
+        "parse_error": false
+      }
+    },
+    "max_exact": {
+      "text": "SCORE: 5\nFEEDBACK: full",
+      "max": 5,
+      "parsed": {
+        "score": 5.0,
+        "feedback": "full",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "zero": {
+      "text": "SCORE: 0\nFEEDBACK: wrong",
+      "max": 5,
+      "parsed": {
+        "score": 0.0,
+        "feedback": "wrong",
+        "unreadable": false,
+        "parse_error": false
+      }
+    },
+    "arabic_digit": {
+      "text": "SCORE: ٣\nFEEDBACK: ok",
+      "max": 5,
+      "parsed": {
+        "score": 3.0,
+        "feedback": "ok",
+        "unreadable": false,
+        "parse_error": false
+      }
+    }
+  }
+}
